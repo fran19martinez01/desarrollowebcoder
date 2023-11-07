@@ -1,0 +1,52 @@
+form {
+    width: 400px;
+    background: #5acccc;
+    padding: 20px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: rgb(255, 255, 255);
+    box-shadow: 7px 13px 37px #7d7e3d;
+}
+
+input[type="text"],
+[type="password"],
+[type="email"],
+[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+input[type=radio] {
+    width: auto;
+    padding: 10px;
+}
+
+.btnformulario {
+    margin-bottom: 0;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.containerForm {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+}
+
+.texto {
+    padding: 10px 20px;
+    font-size: 25px;
+}

@@ -1,0 +1,95 @@
+
+@mixin anclas {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 10px double $color-dorado;
+    text-align: center;
+    padding: 20px 5%;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+.logoNav {
+    width: 150px;
+    cursor: pointer;
+}
+
+.fuentesNav a {
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bold;
+    color: $color-celeste;
+}
+
+.navbar {
+    background-color: rgb(0, 0, 0);
+}
+
+/* Estilo para los elementos del menú */
+
+.navbar-nav .nav-link {
+    color: lightblue;
+
+    &:hover {
+        color: lightcyan;
+    }
+}
+
+/* Cambiar el color del texto cuando el cursor está sobre los elementos del menú */
+
+.navbar-toggler {
+    background-color: $color-dorado;
+}
+
+.navbar-toggler-icon {
+    color: $color-celeste;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin: 0 30px;
+    }
+}
+
+a {
+    @include anclas;
+    font-weight: bold;
+    color: $color-celeste;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    @include anclas;
+    font-family: monospace;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.parrafo {
+    padding: 3px 10px;
+    border: $color-blanco 5px double;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font: oblique bold 100% cursive;
+}
+
+.parrafo {
+    font-size: calc(1em + 1vw);
+  line-height: 1em;
+  padding: 1em;
+  margin: 1em;
+}
